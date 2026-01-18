@@ -5,24 +5,19 @@
 
 /* ============ CSS VARIABLES ============ */
 :root {
-    /* Colors - Professional Light Theme */
-    --bg-primary: #ffffff;
-    --bg-secondary: #f9fafb;
-    --bg-card: #ffffff;
-    --bg-card-hover: #f3f4f6;
-
-    /* Professional Emerald Green Accent */
-    --accent-green: #16a34a;
-    --accent-green-dim: rgba(22, 163, 74, 0.1);
-    --accent-green-glow: rgba(22, 163, 74, 0.25);
-
-    /* Typography - High Contrast Dark Gray */
-    --text-primary: #111827;
-    --text-secondary: #4b5563;
-    --text-muted: #9ca3af;
-
-    --border-color: #e5e7eb;
-    --gradient-green: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    /* Colors - Dark theme with green accent (from logo) */
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #121212;
+    --bg-card: #1a1a1a;
+    --bg-card-hover: #222222;
+    --accent-green: #7FFF00;
+    --accent-green-dim: rgba(127, 255, 0, 0.2);
+    --accent-green-glow: rgba(127, 255, 0, 0.4);
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --text-muted: #666666;
+    --border-color: #2a2a2a;
+    --gradient-green: linear-gradient(135deg, #7FFF00 0%, #32CD32 100%);
 
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
@@ -134,15 +129,15 @@ p {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
     transition: var(--transition-normal);
 }
 
 .header.scrolled {
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    background: rgba(10, 10, 10, 0.98);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 .nav {
@@ -247,8 +242,8 @@ p {
     right: 0;
     bottom: 0;
     background:
-        radial-gradient(ellipse at 30% 20%, var(--accent-green-dim) 0%, transparent 60%),
-        radial-gradient(ellipse at 70% 80%, rgba(22, 163, 74, 0.05) 0%, transparent 50%);
+        radial-gradient(ellipse at 30% 20%, var(--accent-green-dim) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 80%, rgba(127, 255, 0, 0.1) 0%, transparent 40%);
     pointer-events: none;
 }
 
@@ -407,7 +402,6 @@ p {
     transition: var(--transition-normal);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .service-card::before {
@@ -425,7 +419,7 @@ p {
 .service-card:hover {
     transform: translateY(-10px);
     border-color: var(--accent-green);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .service-card:hover::before {
@@ -562,14 +556,13 @@ p {
 }
 
 .expansion-card {
-    background: linear-gradient(145deg, #f0fdf4 0%, #ffffff 100%);
+    background: linear-gradient(145deg, rgba(127, 255, 0, 0.1) 0%, rgba(26, 26, 26, 0.9) 100%);
     border: 2px solid var(--accent-green);
     border-radius: 24px;
     padding: 40px;
     text-align: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .expansion-card::before {
