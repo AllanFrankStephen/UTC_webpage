@@ -43,7 +43,8 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
-
+    <!-- Animation Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
@@ -107,37 +108,18 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <span class="hero-badge">Premier Examination & Infrastructure Partner</span>
+            <span class="hero-badge wow animate__fadeIn" data-wow-delay="0.2s">Premier Examination & Infrastructure
+                Partner</span>
 
-            <h1>Transform Your Future with <span class="highlight">10,000+ Seats</span> and Counting!</h1>
+            <h1 class="wow animate__fadeInUp" data-wow-delay="0.4s">Empowering South India with <span
+                    class="highlight">Examination Services & IT Infrastructure</span></h1>
 
-            <p class="hero-subtitle">
-                Empowering businesses and institutions with robust Online/Offline Examination Services,
-                Managed IT Infrastructure, and professional training solutions across 5 major cities in India.
-            </p>
+            <p class="hero-subtitle wow animate__fadeInUp" data-wow-delay="0.6s">Online/Offline Examination Services,
+                Managed IT Infrastructure & Professional Training Solutions Across Chennai, Bangalore, Hyderabad, Vizag
+                & Kochi</p>
 
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <div class="stat-number">10K+</div>
-                    <div class="stat-label">Seats</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">5</div>
-                    <div class="stat-label">Cities</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Years</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">1M+</div>
-                    <div class="stat-label">Exams Conducted</div>
-                </div>
-            </div>
-
-            <div class="hero-buttons">
+            <div class="hero-cta wow animate__zoomIn" data-wow-delay="0.8s">
                 <a href="#contact" class="btn btn-primary">Get Started →</a>
-                <a href="#services" class="btn btn-secondary">Explore Services</a>
             </div>
         </div>
     </section>
@@ -145,15 +127,15 @@
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">What We Offer</span>
-                <h2>Browse Our Services</h2>
+            <div class="section-header wow animate__fadeInUp">
+                <span class="section-subtitle">Our Core Services</span>
+                <h2>What We Offer</h2>
                 <p>Comprehensive IT solutions tailored for educational institutions, corporations, and government
                     bodies.</p>
             </div>
 
             <div class="services-grid">
-                <article class="service-card">
+                <article class="service-card wow animate__fadeInUp" data-wow-delay="0.2s">
                     <div class="service-icon">📝</div>
                     <h3>Online/Offline Examinations</h3>
                     <p>State-of-the-art Computer Based Testing (CBT) centers equipped with secure infrastructure for
@@ -343,6 +325,11 @@
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
+    <script src="js/security.js"></script>
+    <script src="js/watermark.js"></script>
+    <!-- Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 
 </html>

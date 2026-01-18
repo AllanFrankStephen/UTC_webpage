@@ -15,6 +15,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Animation Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="secure-page">
@@ -43,9 +45,11 @@
     <!-- Hero -->
     <section class="hero" style="min-height: 60vh;">
         <div class="hero-content">
-            <span class="hero-badge">What We Offer</span>
-            <h1>Our <span class="highlight">Services</span></h1>
-            <p class="hero-subtitle">Comprehensive IT solutions for examinations, training, and infrastructure</p>
+            <span class="hero-badge wow animate__fadeIn" data-wow-delay="0.2s">Comprehensive Solutions</span>
+            <h1 class="wow animate__fadeInUp" data-wow-delay="0.4s"><span class="highlight">Services</span> We Provide
+            </h1>
+            <p class="hero-subtitle wow animate__fadeInUp" data-wow-delay="0.6s">End-to-end IT solutions for your
+                business needs</p>
         </div>
     </section>
 
@@ -160,9 +164,13 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/main.js"></script>
     <script src="js/security.js"></script>
     <script src="js/watermark.js"></script>
+    <!-- Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 
 </html>
