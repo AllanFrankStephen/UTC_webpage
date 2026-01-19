@@ -1092,6 +1092,13 @@ p {
 .service-icon {
     transition: transform var(--transition-normal);
     display: inline-block;
+    font-size: 2.5rem;
+    color: var(--accent-green);
+    margin-bottom: 15px;
+}
+
+.service-icon i {
+    display: block;
 }
 
 .service-card:hover .service-icon {
